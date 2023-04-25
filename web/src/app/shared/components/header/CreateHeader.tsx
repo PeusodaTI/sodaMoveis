@@ -1,7 +1,22 @@
 import { useState } from 'react';
 
-export const CreateHeader = () => {
+interface Props {
+    home: React.RefObject<HTMLDivElement>
+    eletronicos: React.RefObject<HTMLDivElement>,
+    eletrodomesticos: React.RefObject<HTMLDivElement>,
+    moveis: React.RefObject<HTMLDivElement>,
+    footer: React.RefObject<HTMLDivElement>
+}
+
+export const CreateHeader: React.FC<Props> = ( {home, eletronicos, eletrodomesticos, moveis, footer} ) => {
     const [navbar, setNavbar] = useState(false);
+    
+    console.log(eletronicos)
+    const scrollToElement = (element: HTMLDivElement | null) => {
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
 
     return(
         <div className="w-auto h-auto pb-0">
@@ -62,31 +77,31 @@ export const CreateHeader = () => {
                                 no-underline hover:underline underline-offset-8 
                                 decoration-gray-900 decoration-4 text-dm"
                             >
-                                <a href="#" translate="no">Home</a>
+                                <a onClick={() => scrollToElement(home.current)} translate="no">Home</a>
                             </li>
                             <li className="text-white hover:text-white 
                                 no-underline hover:underline underline-offset-8 
                                 decoration-gray-900 decoration-4 text-dm"
                             >
-                                <a href="#" translate="no">Eletrônicos</a>
+                                <a onClick={() => scrollToElement(eletronicos.current)} translate="no">Eletrônicos</a>
                             </li>
                             <li className="text-white hover:text-white 
                                 no-underline hover:underline underline-offset-8 
                                 decoration-gray-900 decoration-4 text-dm"
                             >
-                                <a href="#" translate="no">Eletrodomésticos</a>
+                                <a onClick={() => scrollToElement(eletrodomesticos.current)} translate="no">Eletrodomésticos</a>
                             </li>
                             <li className="text-white hover:text-white 
                                 no-underline hover:underline underline-offset-8 
                                 decoration-gray-900 decoration-4 text-dm"
                             >
-                                <a href="#" translate="no">Móveis</a>
+                                <a onClick={() => scrollToElement(moveis.current)} translate="no">Móveis</a>
                             </li>
                             <li className="text-white hover:text-white 
                                 no-underline hover:underline underline-offset-8 
                                 decoration-gray-900 decoration-4 text-dm"
                             >
-                                <a href="#" translate="no">Fale Conosco</a>
+                                <a onClick={() => scrollToElement(footer.current)} translate="no">Fale Conosco</a>
                             </li>
                         </ul>
                     </div>
