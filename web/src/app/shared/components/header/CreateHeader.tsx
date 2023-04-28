@@ -77,31 +77,31 @@ export const CreateHeader: React.FC<Props> = ( {home, eletronicos, eletrodomesti
                                 no-underline hover:underline underline-offset-8 
                                 decoration-gray-900 decoration-4 text-dm"
                             >
-                                <a onClick={() => scrollToElement(home.current)} translate="no">Home</a>
+                                <a className="cursor-pointer" onClick={() => scrollToElement(home.current)} translate="no">Home</a>
                             </li>
                             <li className="text-white hover:text-white 
                                 no-underline hover:underline underline-offset-8 
                                 decoration-gray-900 decoration-4 text-dm"
                             >
-                                <a onClick={() => scrollToElement(eletronicos.current)} translate="no">Eletrônicos</a>
+                                <a className="cursor-pointer" onClick={() => scrollToElement(eletronicos.current)} translate="no">Eletrônicos</a>
                             </li>
                             <li className="text-white hover:text-white 
                                 no-underline hover:underline underline-offset-8 
                                 decoration-gray-900 decoration-4 text-dm"
                             >
-                                <a onClick={() => scrollToElement(eletrodomesticos.current)} translate="no">Eletrodomésticos</a>
+                                <a className="cursor-pointer" onClick={() => scrollToElement(eletrodomesticos.current)} translate="no">Eletrodomésticos</a>
                             </li>
                             <li className="text-white hover:text-white 
                                 no-underline hover:underline underline-offset-8 
                                 decoration-gray-900 decoration-4 text-dm"
                             >
-                                <a onClick={() => scrollToElement(moveis.current)} translate="no">Móveis</a>
+                                <a className="cursor-pointer" onClick={() => scrollToElement(moveis.current)} translate="no">Móveis</a>
                             </li>
                             <li className="text-white hover:text-white 
                                 no-underline hover:underline underline-offset-8 
                                 decoration-gray-900 decoration-4 text-dm"
                             >
-                                <a onClick={() => scrollToElement(footer.current)} translate="no">Fale Conosco</a>
+                                <a className="cursor-pointer" onClick={() => scrollToElement(footer.current)} translate="no">Fale Conosco</a>
                             </li>
                         </ul>
                     </div>
