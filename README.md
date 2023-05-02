@@ -32,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O SodaVirtual é uma interface que simula um e-commerce que produtos diversos. Neste projeto apenas desenvolvi a parte inicial do projeto, onde apresentamos de forma responsiva produtos por categoria. 
+O SodaVirtual é uma interface que simula um e-commerce de produtos diversos. Neste projeto apenas desenvolvi a parte inicial do projeto, onde apresentamos de forma responsiva produtos por categoria. 
 A apresentação dos produtos é realizada de forma dinâmica através de um array de objetos que redenriza o componente <Card />. 
 Adicionamos um arquivo Dockerfile para virtualização do projeto.
 
