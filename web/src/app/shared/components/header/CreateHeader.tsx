@@ -22,7 +22,7 @@ export const CreateHeader: React.FC<Props> = ( {home, eletronicos, eletrodomesti
         <div className="w-auto h-auto pb-0">
             
             <nav className="w-full bg-violet-900 fixed z-50 ">
-            <div className="justify-between px-4 mt-0 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+            <div className="justify-between w-[97%] px-4 mt-0 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <a href="javascript:void(0)">
